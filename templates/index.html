@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAST CANCER DET</title>
+
+    
+    
+
+    <style>
+
+        * {
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+          
+
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-image:radial-gradient(#087096,#E30B5C);
+            color: #000000;
+            background-color: #030303b6;
+            overflow-x: hidden;
+      
+        }
+
+        .world {
+            margin-top:1850px;
+            margin-bottom: 30px;
+        }
+
+        
+
+        .landingpage h1 {
+            margin:20px 0px 40px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+            font-family: "times new roman";
+            
+
+        }
+        
+
+        p {
+            padding: 0px 30px;
+            font-size:1.5rem;
+            text-align: justify;
+            text-justify: auto;
+            color: white;
+
+        }
+
+        .landingpage .button_container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .col_12-1 {
+            position: sticky;
+            top: 100px; 
+         
+            z-index: 100; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: 90px;
+        }
+
+        .col_12-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+           
+            
+
+        }
+
+      
+
+        .col_12-1 h2 {
+            
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+            margin: 35px 0px;
+            font-family: "times new roman";
+        }
+
+        .col_61  {
+
+            width: 800px;
+
+        }
+
+        .copyright{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1300px;
+            width: 110%;
+        }
+
+        .copyrighttext .text {
+
+            font-size: 20px;
+            position: absolute; /* Allow precise positioning */
+            bottom: -3280px; /* Position it 20px from the bottom */
+            left: 30%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .button_container1 {
+            
+            height: 80px;
+            width: 270px;
+            margin: 0 10px;
+            padding: 7px;
+            
+            background: rgba(213, 213, 213, 0.549);
+            border-radius: 20px;
+
+            
+        }
+        .button_container2 {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            gap: 100px;
+            
+
+
+        }
+
+        .button_container1 {
+            animation: slideIn 1s ease;
+        }
+
+        .button_predict {
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            from{
+                transform: translateY(100px);
+                opacity:0;
+            }
+            to {
+                transform: translateY(0);
+                opacity:1;
+            }
+        }
+
+        .container {
+            max-width: 100%;
+            overflow: auto;
+        }
+
+       
+
+        
+
+        .href {
+            
+            text-decoration: none;
+            color: white;
+            font-size: 35px;
+            padding: 15px 20px;
+            background-color:rgba(230, 101, 101, 0.911);
+            border-radius: 15px;
+        }
+
+        .button_predict button{
+            
+            border-radius: 7px;
+            border-color: rgb(100, 100, 100);
+            margin-top: 50px;
+            
+            width: 200px;
+            height: 60px;
+            font-size: 20px;
+
+        }
+
+        .button_predict {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .formgroup {
+            width: 1300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+            font-size: 10px;
+            height: 60px;
+        }
+
+        .formcontrol {
+            display: flex;
+            border: 2px solid gray;
+            border-radius: 10px;
+            width: 30%;
+            padding: 5px;
+            margin-top: 5px;
+            padding: 10px;
+            margin: 10px;
+            margin-right: 50px;
+        }
+
+        .formgroup label {
+            font-size: 2rem;
+            width:400px ;
+        }
+
+        label {
+            
+            width: 100%;
+            
+            
+        }
+
+        .copyrighttext {
+            background-color: rgb(89, 89, 89);
+            color: white;
+            max-width: 100%;
+            overflow: auto;
+           
+        }
+
+      
+
+        .predict_button1 {
+            margin: 325px 0px 15px 0px;
+
+            position: absolute; /* Allow precise positioning */
+            bottom: 0px; /* Position it 20px from the bottom */
+            left: 41%;
+            
+        }
+       
+        
+ 
+
+
+   
+
+.col_62 {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Full width container */
+    gap: 100px; 
+}
+
+.left-column, .right-column {
+    width: 100%; /* Make columns take up 45% each */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between elements */
+}
+
+.left-column .formgroup, .right-column .formgroup {
+    font-family: "times new roman";
+    font-size: 14px; /* Small text size */
+    width: 100%; /* Keep the form groups small */
+}
+
+.formcontrol {
+    font-family: "times new roamn";
+    font-size: 15px; /* Small font for input text */
+    padding: 10px; /* Small padding for input fields */
+    width: 30%; /* Make input boxes full width */
+}
+
+.button_predict {
+    
+    position: absolute; /* Allow precise positioning */
+    bottom: -3250px; /* Position it 20px from the bottom */
+    left: 41%;
+   
+
+}
+
+.button_predict button {
+    font-family: "times new roman";
+    font-size: 18px; /* Font size of the button */
+    padding: 10px 20px; /* Size of the button */
+    height: 50px; /* Height of the button */
+    width: 250px; /* Width of the button */
+
+    border-radius: 10px; /* Rounded corners */
+    
+
+
+    text-decoration: none;
+            color: white;
+            font-size: 20px;
+            background-color:rgba(230, 101, 101, 0.911);
+            border-radius: 15px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.center-image {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.image-container1 {
+    left: 20%;
+    margin: 20px 0;
+    width: 400px; 
+
+
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.center-image1{
+    width: 310px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    position: absolute;
+    bottom:-650px;
+    left: 10%;
+
+
+   
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.center-image2 {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    position: absolute;
+    bottom:-1611px;
+    left: 42%;
+
+
+   
+   
+}
+
+
+.center-image3{
+    width: 340px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    position: absolute;
+    bottom:-1350px;
+    left: 64%;
+
+
+   
+ 
+}
+
+
+.center-image4 {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    position: absolute;
+
+    bottom:-1350px;
+    left: 20%;
+
+
+  
+}
+.Symptoms{
+
+position: absolute;
+left: 45%;
+bottom:-651px;
+font-family: "times new roman";
+font-size: 25px;
+color: blue;
+
+max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.Symptoms h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.dia{
+    position: absolute;
+text-align: left;
+bottom:-1100px;
+font-family: "times new roman";
+font-size: 25px;
+color: aliceblue;
+}
+.dia h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+    </style>
+
+    
+</head>
+<body>
+   
+    
+    <div class="landingpage">
+        <h1>Breast Cancer Detection</h1>
+
+        <p>Breast cancer is a significant concern in India, ranking as one of the most prevalent cancers affecting women across the country. The incidence rates have been rising steadily, highlighting the growing burden of breast cancer on the population. It is crucial to understand the multifaceted impact of breast cancer in India, including its psychological, social and economic effects on patients and their families. Recognizing the diverse range of risk factors such as genetic predisposition, lifestyle choices and environmental influences is essential for developing targeted prevention strategies. The importance of early detection cannot be overstated, as it significantly improves treatment outcomes and survival rates. Our mission is to educate and empower individuals with comprehensive knowledge about breast cancer and provide accessible resources that enable early detection. Through awareness campaigns, community outreach and patient support initiatives. We aim to reduce the incidence of breast cancer and improve the quality of life for those affected.</p>
+            
+        
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='image/BCD.jpg') }}" alt="Breast Cancer Awareness" class="center-image">
+           
+        </div>
+
+        
+        <div class="predict_button1">
+            <div class="button_container1">
+                <a href="#world" class="href">Click Here</a>
+            </div>
+        </div>
+
+   
+            <div class="image-container1">
+                <img src="{{ url_for('static', filename='image/image_1.jpg') }}" alt="Breast Cancer " class="center-image1">
+           
+            </div>
+
+            <div class="Symptoms">
+        <h2>Symptoms of Breast Cancer<br><br></h2>
+        <ul>
+            <li>A new lump or thickened area in the breast or underarm</li>
+            <li>Unexplained changes in breast size or contour</li>
+            <li>Skin on the breast may appear dimpled or puckered</li>
+            <li>Sudden inversion, flattening, or unusual changes in the nipple</li>
+            <li>Ongoing pain in the breast or nipple that does not subside</li>
+            <li>Clear, red, or bloody discharge from the nipple, unrelated to breastfeeding</li>
+            <li>Swelling or an increase in the size of one breast</li>
+            <li>Breast skin may become red, warm, or have an orange-peel texture</li>
+            <li>Unusual visibility of veins on the breast surface</li>
+        </ul>
+
+            </div>
+ 
+        
+        <div class="dia">
+        <h2>Diagnosis<br><br></h2>
+<ul>
+    <li>
+        The diagnosis of breast cancer typically begins with a clinical breast exam, followed by imaging tests such as mammography or ultrasound to detect any abnormalities. If suspicious areas are found, a biopsy is performed to collect tissue samples for laboratory analysis. This helps determine the presence of cancer cells and provides information on the type and stage of cancer, which is crucial for developing an appropriate treatment plan. Advances in diagnostic techniques, including genetic testing, also aid in identifying individuals at higher risk and guiding personalized treatment approaches. Early detection significantly improves the chances of successful treatment and survival.</li>
+</ul>
+    </div>
+
+    <div class="image-container2">
+        <img src="{{ url_for('static', filename='image/memography.jpg') }}" alt="memography" class="center-image2">
+       
+    </div>
+    <div class="image-container3">
+        <img src="{{ url_for('static', filename='image/biopsy.png') }}" alt="biopsy" class="center-image3">
+       
+    </div>
+    <div class="image-container4">
+        <img src="{{ url_for('static', filename='image/MRI.png') }}" alt="MRI" class="center-image4">
+       
+    </div>
+
+
+
+
+
+        <div class="currentstatus">
+            <p class="world" id="world">As of 2023, breast cancer remains the most common cancer among women globally, with approximately 2.3 million new cases and around 670,000 deaths each year. The risk of developing breast cancer increases with age, though it can affect women of all ages, including those without specific risk factors beyond age and gender. The disease imposes significant psychological, social, and economic burdens, affecting patients' quality of life and contributing to substantial healthcare costs. Despite advancements in treatment and early detection, breast cancer remains challenging to manage due to its complexity and variability in response to treatment. The World Health Organization underscores the importance of early detection and preventive measures to improve outcomes and reduce incidence rates.</p>
+        </div>
+
+   
+        
+       
+            <div class="row1">
+                <div class="col_12-1">
+                    <h2>Enter Cell Details</h2>
+                    
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="col_12-2">
+                    <div class="button_container2">
+                        <form action="{{ url_for('predict') }}" method="post" class="form-inline">
+                        <!--
+                            <div class="col_61">
+                                
+                                <div class="image2">
+                                    <img src="image/illustration-breast-cancer-awareness-month_23-2150795312.avif" alt="">
+                                </div>
+                            
+                                 
+                            </div>
+                            -->
+                     
+                          
+                            <div class="col_62">
+                                    <div class="left-column">
+                                    
+                                    <div class="formgroup">
+                                            <label for="clump_thickness">Mean Radius </label>
+                                            <input type="text" class="formcontrol" name="Mean Radius" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="uniform_cell_size">Mean Texture</label>
+                                        <input type="text" class="formcontrol" name="Mean Texture" required>
+                                    </div>
+                                    <div class="formgroup">
+                                        <label for="uniform_cell_shape">Mean Perimeter</label>
+                                        <input type="text" class="formcontrol" name="Mean Perimeter" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="marginal_adhesion">Mean Area</label>
+                                        <input type="text" class="formcontrol" name="Mean Area" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="single_epithelial_size">Mean Smoothness</label>
+                                        <input type="text" class="formcontrol" name="Mean Smoothness" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="bare_nuclei">Mean Compactness</label>
+                                        <input type="text" class="formcontrol" name="Mean Compactness" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="bland_chromatin">Mean Concavity</label>
+                                        <input type="text" class="formcontrol" name="Mean Concavity" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="normal_nucleoli">Mean Concave Points</label>
+                                        <input type="text" class="formcontrol" name="Mean Concave Points" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="mitoses">Mean Symmetry</label>
+                                        <input type="text" class="formcontrol" name="Mean Symmetry" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="mitoses">Mean Fractal Dimension</label>
+                                        <input type="text" class="formcontrol" name="Mean Fractal Dimension" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="radius_error">Radius Error</label>
+                                        <input type="text" class="formcontrol" name="radius_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="texture_error">Texture Error</label>
+                                        <input type="text" class="formcontrol" name="texture_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="perimeter_error">Perimeter Error</label>
+                                        <input type="text" class="formcontrol" name="perimeter_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="area_error">Area Error</label>
+                                        <input type="text" class="formcontrol" name="area_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="smoothness_error">Smoothness Error</label>
+                                        <input type="text" class="formcontrol" name="smoothness_error" required>
+                                    </div>
+
+                                </div>
+                                <div class="right-column">
+                                    
+                                    <div class="formgroup">
+                                        <label for="compactness_error">Compactness Error</label>
+                                        <input type="text" class="formcontrol" name="compactness_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="concavity_error">Concavity Error</label>
+                                        <input type="text" class="formcontrol" name="concavity_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="concave_points_error">Concave Points Error</label>
+                                        <input type="text" class="formcontrol" name="concave_points_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="symmetry_error">Symmetry Error</label>
+                                        <input type="text" class="formcontrol" name="symmetry_error" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="fractal_dimension_error">Fractal Dimension Error</label>
+                                        <input type="text" class="formcontrol" name="fractal_dimension_error" required>
+                                    </div>
+
+                                    <div class="formgroup">
+                                        <label for="worst_radius">Worst Radius</label>
+                                        <input type="text" class="formcontrol" name="worst_radius" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_texture">Worst Texture</label>
+                                        <input type="text" class="formcontrol" name="worst_texture" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_perimeter">Worst Perimeter</label>
+                                        <input type="text" class="formcontrol" name="worst_perimeter" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_area">Worst Area</label>
+                                        <input type="text" class="formcontrol" name="worst_area" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_smoothness">Worst Smoothness</label>
+                                        <input type="text" class="formcontrol" name="worst_smoothness" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_compactness">Worst Compactness</label>
+                                        <input type="text" class="formcontrol" name="worst_compactness" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_concavity">Worst Concavity</label>
+                                        <input type="text" class="formcontrol" name="worst_concavity" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_concave_points">Worst Concave Points</label>
+                                        <input type="text" class="formcontrol" name="worst_concave_points" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_symmetry">Worst Symmetry</label>
+                                        <input type="text" class="formcontrol" name="worst_symmetry" required>
+                                    </div>
+                                    
+                                    <div class="formgroup">
+                                        <label for="worst_fractal_dimension">Worst Fractal Dimension</label>
+                                        <input type="text" class="formcontrol" name="worst_fractal_dimension" required>
+                                    </div>
+                                </div>
+                                    
+                                
+                                    
+                                
+                                <div class="button_predict">
+                                    <button type="submit">Predict Cancer</button>
+                        
+                            </div>
+                 
+                            </div>
+                        </form>      
+                    </div>
+                    
+                </div>
+                
+            </div>
+       
+    
+    
+        
+        <footer>
+                    
+                    <div class="copyrighttext">
+                        <p class="text"> © 2024 Breast Cancer Detection Using Machine Learning</p>
+                    </div>
+                
+        </footer>
+    </div>
+
+
+</body>
+</html>
