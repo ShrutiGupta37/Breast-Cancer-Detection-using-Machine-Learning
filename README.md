@@ -13,9 +13,11 @@ This project focuses on detecting breast cancer with high accuracy using machine
   |-breast_cancer_detector.pickle
 </pre>
 
-Clone the repo
+
+1. Clone the repo
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
+
 
 
 # Here are the screenshots of the website--<br/>
