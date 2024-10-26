@@ -16,7 +16,7 @@ This project focuses on detecting breast cancer with high accuracy using machine
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/ShrutiGupta37/Breast-Cancer-Detection-using-Machine-Learning.git
 
 
 
