@@ -13,7 +13,7 @@ This project focuses on detecting breast cancer with high accuracy using machine
   |-breast_cancer_detector.pickle
 </pre>
 
-#Here are the screenshots of the website--<br/>
+# Here are the screenshots of the website--<br/>
 ![Screenshot 2024-10-25 213734](https://github.com/user-attachments/assets/6517fdba-c77a-4f78-a3c2-e3aafb563bb6)
 ![Screenshot 2024-10-25 220024](https://github.com/user-attachments/assets/173a0529-b2ca-4796-a983-ca933c7f434c)
 ![Screenshot 2024-10-25 220129](https://github.com/user-attachments/assets/04e55c61-00dc-45c5-ae9e-c5f267fd285a)
