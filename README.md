@@ -1,7 +1,7 @@
 ## Breast-Cancer-Detection-using-Machine-Learning
 This project focuses on detecting breast cancer with high accuracy using machine learning. We developed an XGBoost model trained on a breast cancer dataset, achieving an impressive accuracy of 98.25%.We used the Wisconsin Breast Cancer dataset from the sklearn library. The model was saved in a pickle file format, making it easy to load and use in production. The project includes a web-based interface built with HTML and CSS, allowing users to interact with the model to predict breast cancer diagnosis outcomes.
 
-#The file structure should be like this--<br/>
+# The file structure should be like this--<br/>
 <pre>
 |-Breast Cancer Detection
   |-static/image
